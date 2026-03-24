@@ -5,7 +5,7 @@ const api = axios.create({
     timeout: 10000,
     headers: { 'Content-Type': 'application/json' },
 });
-
+console.log("API URL:", import.meta.env.VITE_API_URL);
 // Request interceptor — attach token
 api.interceptors.request.use(
     (config) => {
